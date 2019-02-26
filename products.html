@@ -10,6 +10,7 @@
 <script src="js/jquery-1.11.3.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/home.js"></script>
+<!-- 实现产品展示中展示不同产品图片的JavaScript函数-->
 <script>
 	function show(n){
 		for(var i=1;i<=10;i++){
@@ -24,6 +25,7 @@
 <body>
 <div class="container">
 	<div class="row clearfix">
+	<!-- 导航栏-->
 		<div class="col-md-12 column">
 			<nav class="navbar navbar-default navbar-fixed-top my-navbar" role="navigation">
 				<div class="navbar-header">
@@ -33,6 +35,7 @@
 					<ul class="nav navbar-nav">
 						<li class="dropdown">
 							 <a href="#" class="dropdown-toggle" data-toggle="dropdown" change="change"><span class="glyphicon glyphicon-list-alt"></span> 产品<strong class="caret"></strong></a>
+							<!--“产品”下拉菜单选项 -->
 							<ul class="dropdown-menu">
 								<li>
 									 <a href="products.html">1</a>
@@ -50,6 +53,7 @@
 						</li>
 						<li class="dropdown">
 							 <a href="#" class="dropdown-toggle" data-toggle="dropdown" change="change"><span class="glyphicon glyphicon-book"></span> 解决方案<strong class="caret"></strong></a>
+							<!--“解决方案”下拉菜单选项 -->
 							<ul class="dropdown-menu">
 								<li>
 									 <a href="#">1</a>
@@ -67,6 +71,7 @@
 						</li>
 						<li class="dropdown">
 							 <a href="#" class="dropdown-toggle" data-toggle="dropdown" change="change"><span class="glyphicon glyphicon-question-sign"></span> 服务和支持<strong class="caret"></strong></a>
+							<!--“服务和支持”下拉菜单选项 -->
 							<ul class="dropdown-menu">
 								<li>
 									 <a href="#">采购</a>
@@ -89,7 +94,8 @@
 				</div>
 			</nav>
 		</div>
-	</div>				
+	</div>
+    <!-- 用户信息填写表单-->	
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -115,15 +121,19 @@
 			</div>
 		</div>
 	</div>
+	<!-- 产品介绍块，包括标题（产品介绍）、产品图片、产品名称列表-->
 	<div class="row clearfix" id="product-area">
 		<div class="col-md-8 column">
 		   <div class="product-title">
 		      <h3>产品介绍</h3><br/>
 		   </div>
+		   <!-- 产品图片块-->
 		   <div class="product-picture">
 					<div id="item1">
 					  <div class="product-display">
+					  <!--产品1图片来源、尺寸-->
 					      <img src="img/product1.png" height="330px" width="740px" alt="产品1" >
+						  <!--图片上的文字 -->
                           <div class="text-content">
                              <h2><strong>产品名称1</strong></h2>
                              <p class="hidden-sm hidden-xs"> 产品特点产品特点 </p>
@@ -132,6 +142,7 @@
 					  </div>
 					</div>
 					<div id="item2" class="product-display" style="display:none;">
+					      <!--产品2图片来源、尺寸-->
 					      <img src="img/product2.png" height="330px" width="740px" alt="产品2" >
                           <div class="text-content">
                              <h2><strong>产品名称2</strong></h2>
@@ -140,6 +151,7 @@
                          </div>
 					</div>
 					<div id="item3" class="product-display" style="display:none;">
+					      <!--产品3图片来源、尺寸-->
 					      <img src="img/product1.png" height="330px" width="740px" alt="产品3" >
                           <div class="text-content">
                              <h2><strong>产品名称3</strong></h2>
@@ -148,6 +160,7 @@
                          </div>
 					</div>
 					<div id="item4" class="product-display" style="display:none;">
+					      <!--产品4图片来源、尺寸-->
 					      <img src="img/product2.png" height="330px" width="740px" alt="产品4" >
                           <div class="text-content">
                              <h2><strong>产品名称4</strong></h2>
@@ -156,6 +169,7 @@
                          </div>
 					</div>
 					<div id="item5" class="product-display" style="display:none;">
+					      <!--产品5图片来源、尺寸-->
 					      <img src="img/product1.png" height="330px" width="740px" alt="产品5" >
                           <div class="text-content">
                              <h2><strong>产品名称5</strong></h2>
@@ -164,6 +178,7 @@
                          </div>
 					</div>
 					<div id="item6" class="product-display" style="display:none;">
+					      <!--产品6图片来源、尺寸-->
 					      <img src="img/product2.png" height="330px" width="740px" alt="产品5" >
                           <div class="text-content">
                              <h2><strong>产品名称6</strong></h2>
@@ -172,6 +187,7 @@
                          </div>
 					</div>
 					<div id="item7" class="product-display" style="display:none;">
+					      <!--产品7图片来源、尺寸-->
 					      <img src="img/product1.png" height="330px" width="740px" alt="产品5" >
                           <div class="text-content">
                              <h2><strong>产品名称7</strong></h2>
@@ -180,6 +196,7 @@
                          </div>
 					</div>
 					<div id="item8" class="product-display" style="display:none;">
+					      <!--产品8图片来源、尺寸-->
 					      <img src="img/product2.png" height="330px" width="740px" alt="产品5" >
                           <div class="text-content">
                              <h2><strong>产品名称8</strong></h2>
@@ -188,6 +205,7 @@
                          </div>
 					</div>
 					<div id="item9" class="product-display" style="display:none;">
+					      <!--产品9图片来源、尺寸-->
 					      <img src="img/product1.png" height="330px" width="740px" alt="产品5" >
                           <div class="text-content">
                              <h2><strong>产品名称9</strong></h2>
@@ -196,6 +214,7 @@
                          </div>
 					</div>
 					<div id="item10" class="product-display" style="display:none;">
+					      <!--产品10图片来源、尺寸-->
 					      <img src="img/product2.png" height="330px" width="740px" alt="产品5" >
                           <div class="text-content">
                              <h2><strong>产品名称10</strong></h2>
@@ -204,7 +223,9 @@
                          </div>
 					</div>
 			</div>
+		   <!-- -产品列表块-->
 		   <div class="product-list"> 
+		   <!-- 列表左边-->
 		    <div class="product-list-left">
 		      <ul>
 			     <li class="product-content">
@@ -224,6 +245,7 @@
 				 </li>
 			  </ul>
 			 </div>
+			 <!-- 列表右边-->
 			  <div class="product-list-right">
 		         <ul>
 			     <li class="product-content">
@@ -245,6 +267,7 @@
 			 </div>
 		   </div>
 		</div>
+		<!-- 公司信息：地址、邮编、电话、发送邮件 -->
 		<div class="col-md-4 column">
 		   <div class="panel panel-primary">
 				<div class="panel-heading">
@@ -262,6 +285,7 @@
 					</p>
 				</div>
 			</div>
+			<!-- 公司信息：地址、邮编、电话、发送邮件 （和上面重复）-->
 			<div class="panel panel-primary">
 				<div class="panel-heading">
 					<h3 class="panel-title">奇米阿弥自动化有限公司</h3>
@@ -280,6 +304,7 @@
 			</div>
 		</div>
 	</div>
+	<!-- 特色产品展示区，网页中此区域展示四个产品 -->
 	<div class="row clearfix">
 		<div class="col-md-3 column">
 		   <div class="panel panel-default">
@@ -291,7 +316,9 @@
 	          <div class="panel-body">
 		         <p>产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介</p>
 				 <a href="#">
+				    <!-- 产品图片来源 -->
 				    <img src="img/product1.png"/><br>
+					<!-- 链接 -->
 				    <p>更多信息&gt&gt</p>
 				 </a>
 	          </div>
@@ -307,7 +334,9 @@
 	          <div class="panel-body">
 		         <p>产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介</p>
 				 <a href="#">
+				    <!-- 产品图片来源 -->
 				    <img src="img/product2.png"/><br>
+					<!-- 链接 -->
 				    <p>更多信息&gt&gt</p>
 				 </a>
 	          </div>
@@ -323,7 +352,9 @@
 	          <div class="panel-body">
 		         <p>产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介</p>
 				 <a href="#">
+				 <!-- 产品图片来源 -->
 				    <img src="img/product1.png"/><br>
+					<!-- 链接 -->
 				    <p>更多信息&gt&gt</p>
 				 </a>
 	          </div>
@@ -339,7 +370,9 @@
 	          <div class="panel-body">
 		         <p>产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介</p>
 				 <a href="#">
+				    <!-- 产品图片来源 -->
 				    <img src="img/product2.png"/><br>
+					<!-- 链接 -->
 				    <p>更多信息&gt&gt</p>
 				 </a>
 	          </div>
