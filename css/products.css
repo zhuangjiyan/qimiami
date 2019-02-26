@@ -1,0 +1,210 @@
+body{
+	padding:70px 0 5px 0;
+	width:100%;
+	height:100%;
+	background:-webkit-linear-gradient(top,#ccbeff,#ccc2ff,#ffeeff,#fff4ff,#fff8ff,#ffffff);
+}
+
+@media (min-width:320px){
+	nav.my-navbar{
+	transition:background 0.5s ease-in-out, padding 0.5s ease-in-out;
+	}
+}
+
+@media (min-width:1200px){
+	nav.my-navbar{
+	height:70px;
+	transition:background 0.5s ease-in-out, padding 0.5s ease-in-out;
+	background:transparent;
+	border-color:transparent;	
+	}
+}
+
+
+nav.top-nav{
+	height:50px;
+	background-color:#fff;
+}
+
+.collapse > .nav > li > a{
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.navbar-brand{
+	margin:10px 0;
+}
+
+nav.my-navbar a{
+	background:transparent;
+	transition:color 0.5s ease-in-out;
+}
+
+nav.my-navbar a:hover{
+	background:transparent;
+	outline:0;
+}
+
+a.navbar-brand{
+	font-size:22px;
+}
+
+a.dropdown-toggle,.showform{
+	font-size:16px;
+}
+
+.dropdown > .dropdown-menu li a{
+	font-size:16px;
+	line-height:1.5;
+}
+
+.dropdown > .dropdown-menu li a:hover{
+	color:#cc66ff;
+	text-decoration:underline;
+}
+
+label{
+	font-size:120%;
+}
+
+@media (min-width:320px){
+	.modal>.modal-dialog{
+		width:90%;
+	}
+}
+
+@media (min-width:1200px){
+	.modal>.modal-dialog{
+		width:33%;
+	}
+}
+
+/*底部边界线*/
+#product-area{
+	border-bottom:1px solid #e0e0e0;
+}
+/*产品展示*/
+.product-picture{
+	margin-bottom:20px;
+}
+/* 图片展示*/
+.col-md-8 > .product-display {
+    position: relative;
+    max-width: 100%;
+    height: auto;    
+    background-size: 100% auto;
+}
+/*图片上面的文字*/
+.text-content{
+	  position:absolute; 
+	  top:88px; 
+	  left:17%;
+ }
+.text-content h2 {
+        margin-top:5px;
+        font-family:simsun;
+		font-size:18px;
+		text-align:left;
+ }
+.text-content p{
+        margin-top:15px;
+        margin-bottom: 18px;
+        font-family:simsun;
+        font-size: 12px;
+		text-align:left;
+}
+.text-content a{
+        font-family: Simsun;
+        font-size: 12px;
+}
+.text-content a:link,a:visited{
+	color:black;
+}
+.text-content a:hover,a:active{
+	color:#cc99ff;
+}
+/* 产品名称列表*/
+.product-list-left{
+	width:50%;
+	float:left;
+}
+.product-list a:link,a:visited{
+	color:black;
+}
+.product-list a:hover,a:active{
+	color:#cc99ff;
+}
+.product-list-right{
+	width:40%;
+	float:right;
+}
+.product-content{
+	width:50%;
+	height:34px;
+	padding-top:8px;
+	border-top:1px solid #e0e0e0;
+}
+/*col-md-4面板*/
+.col-md-4 > .panel{
+	margin-top:30px;
+	height:300px;
+	font-size:110%;
+	border-color:#ccc9ff;
+}
+.col-md-4 > .panel > .panel-heading{
+	background-color:#cc99ff;
+	border-color:#cca9ff;
+}
+/*4个面板*/
+.panel{
+	margin-top:10px;
+	height:300px;
+	border-color:#cca9ff;
+}
+.column>.panel>.panel-heading{
+	background-color:#cc99ff;
+}
+.panel-heading h3{
+	text-align:center;
+	font-family:simsun;
+	font-size:18px;
+}
+.panel-body img{
+	width:80%;
+	height:120px;
+	text-align:center;
+}
+.panel-body a p{
+	font-family:simsun;
+	font-size:10px;
+}
+.panel-body a:link,a:visited{
+	color:black;
+}
+.panel-body a:hover,a:active{
+	color:#cc99ff;
+}
+/*底部*/
+.footer , #footer-ul li a{
+	color:#666;
+	text-align:center;
+	font-size:13px;
+}
+
+#footer-ul{
+	width:300px;
+	margin:0 auto;
+}
+
+#footer-ul ul{
+	padding-left:0;
+	width:300px;
+	margin:0 auto;
+}
+
+#footer-ul ul li{
+	list-style:none;
+	float:left;
+	width:100px;
+	text-align:center;
+}
