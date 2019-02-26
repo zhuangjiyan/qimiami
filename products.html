@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>产品介绍</title>
+<link href="css/products.css" rel="stylesheet">
+<link href="css/bootstrap.css" rel="stylesheet">
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/home.js"></script>
+<script>
+	function show(n){
+		for(var i=1;i<=10;i++){
+		   document.getElementById("item"+i).style.display='none';
+		   //display实现内容的隐藏与否的控制，当为none是，隐藏
+		}
+	document.getElementById("item"+n).style.display='block';
+	//当block时，隐藏的即可显示
+	}
+</script>
+</head>
+<body>
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<nav class="navbar navbar-default navbar-fixed-top my-navbar" role="navigation">
+				<div class="navbar-header">
+					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">切换导航</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="index.html">奇米阿弥</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown" change="change"><span class="glyphicon glyphicon-list-alt"></span> 产品<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									 <a href="products.html">1</a>
+								</li>
+								<li>
+									 <a href="#">2</a>
+								</li>
+								<li>
+									 <a href="#">3</a>
+								</li>
+								<li>
+									 <a href="#">4</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown" change="change"><span class="glyphicon glyphicon-book"></span> 解决方案<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									 <a href="#">1</a>
+								</li>
+								<li>
+									 <a href="#">2</a>
+								</li>
+								<li>
+									 <a href="#">3</a>
+								</li>
+								<li>
+									 <a href="#">4</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown" change="change"><span class="glyphicon glyphicon-question-sign"></span> 服务和支持<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									 <a href="#">采购</a>
+								</li>
+								<li>
+									 <a href="#">产品支持</a>
+								</li>
+								<li>
+									 <a href="#">售后服务</a>
+								</li>
+								<li>
+									 <a href="#">知识信息</a>
+								</li>
+							</ul>
+						</li>
+						<li class="showform">
+						<a href="#" data-toggle="modal" data-target="#myModal" change="change"><span class="glyphicon glyphicon-user"></span> 联系我们</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>				
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<form role="form" action="upUser.asp" method="post" style="padding:10px 10px" onsubmit="return checkform()">
+					<p><button type="button" class="close btn-lg" data-dismiss="modal" aria-hidden="true">&times;</button></p>
+						<div class="form-group">
+							<label for="name">姓名*</label>
+							<input type="text" class="form-control" name="name" id="name" placeholder="请输入姓名">
+						</div>
+						<div class="form-group">
+							<label for="phone">电话*</label>
+							<input type="text" class="form-control" name="phone" id="phone" placeholder="请输入电话">
+						</div>
+						<div class="form-group">
+							<label for="email">邮箱*</label>
+							<input type="text" class="form-control" name="email" id="email" placeholder="请输入邮箱">
+					  </div>
+					  <input type="submit" class="btn btn-primary" value="提交">
+					  <input type="reset" class="btn btn-default" value="重置">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row clearfix" id="product-area">
+		<div class="col-md-8 column">
+		   <div class="product-title">
+		      <h3>产品介绍</h3><br/>
+		   </div>
+		   <div class="product-picture">
+					<div id="item1">
+					  <div class="product-display">
+					      <img src="img/product1.png" height="330px" width="740px" alt="产品1" >
+                          <div class="text-content">
+                             <h2><strong>产品名称1</strong></h2>
+                             <p class="hidden-sm hidden-xs"> 产品特点产品特点 </p>
+                             <a href="#">产品名称&gt&gt</a>
+                         </div>
+					  </div>
+					</div>
+					<div id="item2" class="product-display" style="display:none;">
+					      <img src="img/product2.png" height="330px" width="740px" alt="产品2" >
+                          <div class="text-content">
+                             <h2><strong>产品名称2</strong></h2>
+                             <p class="hidden-sm hidden-xs"> 产品特点产品特点 </p>
+                             <a href="#">产品名称&gt&gt</a>
+                         </div>
+					</div>
+					<div id="item3" class="product-display" style="display:none;">
+					      <img src="img/product1.png" height="330px" width="740px" alt="产品3" >
+                          <div class="text-content">
+                             <h2><strong>产品名称3</strong></h2>
+                             <p class="hidden-sm hidden-xs"> 产品特点产品特点 </p>
+                             <a href="#">产品名称&gt&gt</a>
+                         </div>
+					</div>
+					<div id="item4" class="product-display" style="display:none;">
+					      <img src="img/product2.png" height="330px" width="740px" alt="产品4" >
+                          <div class="text-content">
+                             <h2><strong>产品名称4</strong></h2>
+                             <p class="hidden-sm hidden-xs"> 产品特点产品特点 </p>
+                             <a href="#">产品名称&gt&gt</a>
+                         </div>
+					</div>
+					<div id="item5" class="product-display" style="display:none;">
+					      <img src="img/product1.png" height="330px" width="740px" alt="产品5" >
+                          <div class="text-content">
+                             <h2><strong>产品名称5</strong></h2>
+                             <p class="hidden-sm hidden-xs"> 产品特点产品特点 </p>
+                             <a href="#">产品名称&gt&gt</a>
+                         </div>
+					</div>
+					<div id="item6" class="product-display" style="display:none;">
+					      <img src="img/product2.png" height="330px" width="740px" alt="产品5" >
+                          <div class="text-content">
+                             <h2><strong>产品名称6</strong></h2>
+                             <p class="hidden-sm hidden-xs"> 产品特点产品特点 </p>
+                             <a href="#">产品名称&gt&gt</a>
+                         </div>
+					</div>
+					<div id="item7" class="product-display" style="display:none;">
+					      <img src="img/product1.png" height="330px" width="740px" alt="产品5" >
+                          <div class="text-content">
+                             <h2><strong>产品名称7</strong></h2>
+                             <p class="hidden-sm hidden-xs"> 产品特点产品特点 </p>
+                             <a href="#">产品名称&gt&gt</a>
+                         </div>
+					</div>
+					<div id="item8" class="product-display" style="display:none;">
+					      <img src="img/product2.png" height="330px" width="740px" alt="产品5" >
+                          <div class="text-content">
+                             <h2><strong>产品名称8</strong></h2>
+                             <p class="hidden-sm hidden-xs"> 产品特点产品特点 </p>
+                             <a href="#">产品名称&gt&gt</a>
+                         </div>
+					</div>
+					<div id="item9" class="product-display" style="display:none;">
+					      <img src="img/product1.png" height="330px" width="740px" alt="产品5" >
+                          <div class="text-content">
+                             <h2><strong>产品名称9</strong></h2>
+                             <p class="hidden-sm hidden-xs"> 产品特点产品特点 </p>
+                             <a href="#">产品名称&gt&gt</a>
+                         </div>
+					</div>
+					<div id="item10" class="product-display" style="display:none;">
+					      <img src="img/product2.png" height="330px" width="740px" alt="产品5" >
+                          <div class="text-content">
+                             <h2><strong>产品名称10</strong></h2>
+                             <p class="hidden-sm hidden-xs"> 产品特点产品特点 </p>
+                             <a href="#">产品名称&gt&gt</a>
+                         </div>
+					</div>
+			</div>
+		   <div class="product-list"> 
+		    <div class="product-list-left">
+		      <ul>
+			     <li class="product-content">
+				    <a href="#" id="product1" onmouseover="show(1)">产品1</a>
+				 </li>
+				 <li class="product-content">
+				    <a href="#" id="product2" onmouseover="show(2)">产品2</a>
+				 </li>
+				 <li class="product-content">
+				    <a href="#" id="product3" onmouseover="show(3)">产品3</a>
+				 </li>
+				 <li class="product-content">
+				    <a href="#" id="product4" onmouseover="show(4)">产品4</a>
+				 </li>
+				 <li class="product-content">
+				    <a href="#" id="product5" onmouseover="show(5)">产品5</a>
+				 </li>
+			  </ul>
+			 </div>
+			  <div class="product-list-right">
+		         <ul>
+			     <li class="product-content">
+				    <a href="#" id="product6" onmouseover="show(6)">产品6</a>
+				 </li>
+				 <li class="product-content">
+				    <a href="#" id="product7" onmouseover="show(7)">产品7</a>
+				 </li>
+				 <li class="product-content">
+				    <a href="#" id="product8" onmouseover="show(8)">产品8</a>
+				 </li>
+				 <li class="product-content">
+				    <a href="#" id="product9" onmouseover="show(9)">产品9</a>
+				 </li>
+				 <li class="product-content">
+				    <a href="#" id="product10" onmouseover="show(10)">产品10</a>
+				 </li>
+			  </ul>
+			 </div>
+		   </div>
+		</div>
+		<div class="col-md-4 column">
+		   <div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">奇米阿弥自动化有限公司</h3>
+				</div>
+				<div class="panel-body">
+					<p>
+						<span class="glyphicon glyphicon-globe"></span><strong>公司地址：</strong><br/>南京江宁区麒麟科技创新园智汇路300号B单元二楼<br/><br/>
+						<span><strong>邮编：</strong>309394</span><br/><br/>
+						<span class="glyphicon glyphicon-earphone"></span><strong> 技术电话：</strong><br/>13851936189
+					</p>
+					<p style="position:absolute;bottom:30px">
+						<a href="mailto:1505425021@qq.com?subject=这是邮件的主题&body=这是邮件的内容" rel="nofollow" style="color:#cc99cc">
+						   <span class="glyphicon glyphicon-envelope"></span> E-mail</a>
+					</p>
+				</div>
+			</div>
+			<div class="panel panel-primary">
+				<div class="panel-heading">
+					<h3 class="panel-title">奇米阿弥自动化有限公司</h3>
+				</div>
+				<div class="panel-body">
+					<p>
+						<span class="glyphicon glyphicon-globe"></span><strong>公司地址：</strong><br/>江苏省南京市江宁区麒麟科技创新园智汇路300号B单元二楼<br/><br/>
+						<span><strong>邮编：</strong>309394</span><br/><br/>
+						<span class="glyphicon glyphicon-earphone"></span><strong> 技术电话：</strong><br/>13851936189
+					</p>
+					<p style="position:absolute;bottom:30px">
+						<a href="mailto:1505425021@qq.com?subject=这是邮件的主题&body=这是邮件的内容" rel="nofollow" style="color:#cc99cc">
+						   <span class="glyphicon glyphicon-envelope"></span> E-mail</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row clearfix">
+		<div class="col-md-3 column">
+		   <div class="panel panel-default">
+	          <div class="panel-heading">
+		         <h3 class="panel-title">
+			        <b>产品名称1</b>
+		         </h3>
+	          </div>
+	          <div class="panel-body">
+		         <p>产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介</p>
+				 <a href="#">
+				    <img src="img/product1.png"/><br>
+				    <p>更多信息&gt&gt</p>
+				 </a>
+	          </div>
+			</div>
+		</div>
+		<div class="col-md-3 column">
+		   <div class="panel panel-default">
+	          <div class="panel-heading">
+		         <h3 class="panel-title">
+			        <b>产品名称2</b>
+		         </h3>
+	          </div>
+	          <div class="panel-body">
+		         <p>产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介</p>
+				 <a href="#">
+				    <img src="img/product2.png"/><br>
+				    <p>更多信息&gt&gt</p>
+				 </a>
+	          </div>
+			</div>
+		</div>
+		<div class="col-md-3 column">
+		   <div class="panel panel-default">
+	          <div class="panel-heading">
+		         <h3 class="panel-title">
+			        <b>产品名称3</b>
+		         </h3>
+	          </div>
+	          <div class="panel-body">
+		         <p>产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介</p>
+				 <a href="#">
+				    <img src="img/product1.png"/><br>
+				    <p>更多信息&gt&gt</p>
+				 </a>
+	          </div>
+			</div>
+		</div>
+		<div class="col-md-3 column">
+		   <div class="panel panel-default">
+	          <div class="panel-heading">
+		         <h3 class="panel-title">
+			        <b>产品名称4</b>
+		         </h3>
+	          </div>
+	          <div class="panel-body">
+		         <p>产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介产品简介</p>
+				 <a href="#">
+				    <img src="img/product2.png"/><br>
+				    <p>更多信息&gt&gt</p>
+				 </a>
+	          </div>
+			</div>
+		</div>
+	</div>
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<p class="footer">
+				Copyright © 2018 南京奇米阿弥自动化有限公司 版权所有 苏ICP备19004751号-1
+			</p>
+			<div id="footer-ul">
+				<ul>
+					<li><a href="#">法律信息</a></li>
+					<li><a href="#" data-toggle="modal" data-target="#myModal">合作联系</a></li>
+					<li><a href="#">关于我们</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

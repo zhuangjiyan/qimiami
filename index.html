@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 网页标题 -->
+<title>南京奇米阿弥自动化设备有限公司</title>
+<!-- 网页关键词 -->
+<meta name="keyword" content="自动化设备,自动化生产线,单项排气阀自动装配机器">
+<!-- 网页简单描述 -->
+<meta name="description" content="南京奇米阿弥自动化设备有限公司，主要经营自动化设备、自动化生产线、单项排气阀自动装配机器等。如果您对我公司的产品服务有兴趣，请在线留言或者来电咨询。">
+<link href="css/home.css" rel="stylesheet">
+<link href="css/bootstrap.css" rel="stylesheet">
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/home.js"></script>
+</head>
+<body>
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<nav class="navbar navbar-default navbar-fixed-top my-navbar" role="navigation">
+				<div class="navbar-header">
+					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">切换导航</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="index.html">奇米阿弥</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown" change="change"><span class="glyphicon glyphicon-list-alt"></span> 产品<strong class="caret"></strong></a>
+							 <!-- href后添加网页链接，<a>标签中添加链接名称 如需增减列数，只需按照line33-35相应格式复制黏贴-->
+							<ul class="dropdown-menu">
+								<li>
+									 <a href="products.html">产品1</a>
+								</li>
+								<li>
+									 <a href="products.html">产品2</a>
+								</li>
+								<li>
+									 <a href="products.html">产品3</a>
+								</li>
+								<li>
+									 <a href="products.html">产品4</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown" change="change"><span class="glyphicon glyphicon-book"></span> 解决方案<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									 <a href="#">解决方案1</a>
+								</li>
+								<li>
+									 <a href="#">解决方案2</a>
+								</li>
+								<li>
+									 <a href="#">解决方案3</a>
+								</li>
+								<li>
+									 <a href="#">解决方案4</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							 <a href="#" class="dropdown-toggle" data-toggle="dropdown" change="change"><span class="glyphicon glyphicon-question-sign"></span> 服务和支持<strong class="caret"></strong></a>
+							<ul class="dropdown-menu">
+								<li>
+									 <a href="#">采购</a>
+								</li>
+								<li>
+									 <a href="#">产品支持</a>
+								</li>
+								<li>
+									 <a href="#">售后服务</a>
+								</li>
+								<li>
+									 <a href="#">知识信息</a>
+								</li>
+							</ul>
+						</li>
+						<li class="showform">
+						<a href="#" data-toggle="modal" data-target="#myModal" change="change"><span class="glyphicon glyphicon-user"></span> 联系我们</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</div>				
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					<form role="form" action="upUser.asp" method="post" style="padding:10px 10px" onsubmit="return checkform()">
+					<p><button type="button" class="close btn-lg" data-dismiss="modal" aria-hidden="true">&times;</button></p>
+						<div class="form-group">
+							<label for="name">姓名*</label>
+							<input type="text" class="form-control" name="name" id="name" placeholder="请输入姓名">
+						</div>
+						<div class="form-group">
+							<label for="phone">电话*</label>
+							<input type="text" class="form-control" name="phone" id="phone" placeholder="请输入电话">
+						</div>
+						<div class="form-group">
+							<label for="email">邮箱*</label>
+							<input type="text" class="form-control" name="email" id="email" placeholder="请输入邮箱">
+					  </div>
+					  <input type="submit" class="btn btn-primary" value="提交">
+					  <input type="reset" class="btn btn-default" value="重置">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="main" class="row clearfix">
+		<div class="row clearfix">
+			<div class="col-md-12 column">	
+				<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval=3000>
+					<!-- 轮播（Carousel）指标 如需增减轮播图片数量，按照下面line120类似格式复制粘贴或删除即可 -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+					</ol>   
+					<!-- 轮播（Carousel）项目 href后添加点击图片后的网页链接 src后添加图片相对路径，alt后添加图片无法显示后的提示词 
+												添加图片时应先确定图片的分辨率适配 增减图片数量时需要按照line132-136格式复制-->
+					<div class="carousel-inner">
+						<div class="item active">
+							<a href="products.html">
+							<img src="img/slide1.png" class="img-responsive center-block" alt="图片1" >
+							</a>
+						</div>
+						<div class="item">
+							<a href="products.html">
+							<img src="img/slide2.png" class="img-responsive center-block" alt="图片2">
+							</a>
+						</div>
+						<div class="item">
+							<a href="products.html">
+							<img src="img/slide3.png" class="img-responsive center-block" alt="图片3">
+							</a>
+						</div>
+					</div>
+					<!-- 轮播（Carousel）导航 -->
+					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+						<span class="sr-only">上一张</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+						<span class="sr-only">下一张</span>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="row clearfix">
+			<div class="col-md-3 column">
+				<div class="panel panel-primary">
+					<!-- 面板标题 -->
+					<div class="panel-heading">
+						<h3 class="panel-title">新 闻</h3>
+					</div>
+					<!-- 面板内容 -->
+					<div class="panel-body">
+						<ul>
+						<li>1</li>
+						<li>2</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 column">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">最 新</h3>
+					</div>
+					<div class="panel-body">
+						这是一个基本的面板
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 column">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">相 关</h3>
+					</div> 
+					<div class="panel-body">
+						这是一个基本的面板
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3 column">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">奇米阿弥自动化有限公司</h3>
+					</div>
+					<div class="panel-body">
+						<p>
+							<span class="glyphicon glyphicon-globe"></span><strong> 公司地址：</strong><br/>江苏省南京市江宁区麒麟科技创新园智汇路300号B单元二楼<br/><br/>
+							<span class="glyphicon glyphicon-earphone"></span><strong> 电话：</strong>13851936189
+						</p>
+						<p style="position:absolute;bottom:20px">
+							<a href="mailto:1505425021@qq.com?subject=这是邮件的主题&body=这是邮件的内容" rel="nofollow" style="color:#cc99cc">发送邮件>></a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<p class="footer">
+				Copyright © 2018 南京奇米阿弥自动化有限公司 版权所有 苏ICP备19004751号-1
+			</p>
+			<div id="footer-ul">
+				<ul>
+					<li><a href="#">法律信息</a></li>
+					<li><a href="#" data-toggle="modal" data-target="#myModal">合作联系</a></li>
+					<li><a href="#">关于我们</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
