@@ -13,11 +13,11 @@ function checkform(){
 $(function(){
 	$(window).scroll(function(){
 		if($(".navbar").offset().top > 50){
-			$(".navbar-fixed-top").addClass("top-nav");
+			$(".fixed-top").addClass("top-nav");
 			$(".navbar-brand").css("margin", "0px");
 			$("[change]").css({"padding-top":"15px","padding-bottom":"15px"});
 		}else{
-			$(".navbar-fixed-top").removeClass("top-nav");
+			$(".fixed-top").removeClass("top-nav");
 			$(".navbar-brand").css("margin", "10px 0px");
 			$("[change]").css({"padding-top":"25px","padding-bottom":"25px"});
 		}
